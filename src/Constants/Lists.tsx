@@ -131,4 +131,27 @@ export default {
       ],
     },
   ],
+  PROJECTS: [
+    {
+      id: 1,
+      title: 'Image-AI',
+      desc: 'Modern MERN stack web application made with Vite that utilizes DALL-E API from OpenAI to fetch ai-generated pictures from user provided prompts',
+      link: 'https://github.com/mhericwang/image-ai',
+      img: '/src/assets/projects/imageai.png',
+    },
+    {
+      id: 2,
+      title: 'UW Course Planner',
+      desc: 'Fully functional database-driven React(JS)-Spring(Java) app that uses UWaterloo\’s OpenData API to help students search & plan courses',
+      link: 'https://github.com/blzzhang/cs348-proj',
+      img: '/src/assets/projects/uwcp.png',
+    },
+    {
+      id: 3,
+      title: 'Students of Watan',
+      desc: 'Waterloo-themed text-based game of Settler\'s of Catan, made with proper OOP practices and multiple industry-standard design patterns',
+      link: 'https://github.com/ericmhwang/watan',
+      img: '/src/assets/projects/watan.jpeg',
+    },
+  ]
 }

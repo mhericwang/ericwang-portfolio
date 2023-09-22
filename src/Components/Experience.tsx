@@ -5,7 +5,7 @@ import SectionWrapper from '../hoc/SectionWrapper';
 import Lists from '../Constants/Lists'; 
 
 import 'react-vertical-timeline-component/style.min.css';
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn } from '../utils/motion';
 
 type experience = {
   title: string,
