@@ -6,10 +6,10 @@ import ProfilePic from "./ProfilePic";
 
 function Introduction() {
   return (
-    <motion.div variants={fadeIn('right', 'spring', 0.1, 1)} className="bg-gray-200 mr-6">
+    <motion.div variants={fadeIn('down', 'spring', 0.1, 1)} className="bg-gray-200 mr-6">
       <div className='grid grid-cols-1 lg:grid-cols-2 mr-4 align-bottom'>
         <motion.div 
-          variants={fadeIn('right', 'spring', 0.1, 1)}
+          variants={fadeIn('down', 'spring', 0.1, 1)}
           className='flex bg-gray-200 justify-center flex-col items-center lg:pl-24'>
             <div className='h-[150px] border-r-[2px] border-gray-400'/>
             <div className='w-[10px] h-[10px] bg-blue-600 rounded-full'/>
@@ -24,7 +24,7 @@ function Introduction() {
             </div>
             <img src='/src/assets/smallpfp.JPG' className='w-[160px] h-[160px] bg-gray-200 p-7 rounded-full mt-7 mb-3'/>
         </motion.div>
-          <motion.div variants={fadeIn('right', 'spring', 0.1, 1)} className='hidden lg:block'>
+          <motion.div variants={fadeIn('down', 'spring', 0.1, 1)} className='hidden lg:block'>
             <ProfilePic/>
           </motion.div>
         </div>

@@ -20,7 +20,7 @@ export const textVariant = (delay : number) => {
     direction: string, 
     type: string, 
     delay: number, 
-    duration: number 
+    duration: number
     ) => {
     return {
       hidden: {

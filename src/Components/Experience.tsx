@@ -5,7 +5,7 @@ import SectionWrapper from '../hoc/SectionWrapper';
 import Lists from '../Constants/Lists'; 
 
 import 'react-vertical-timeline-component/style.min.css';
-import { textVariant } from '../utils/motion';
+import { fadeIn, textVariant } from '../utils/motion';
 
 type experience = {
   title: string,
@@ -54,7 +54,7 @@ const ExperienceCard = ({ experience }: { experience: experience; }) => (
 
 function Experience() {
   return (
-    <motion.div variants={textVariant(0.1)} className='px-12 mt-12'>
+    <motion.div variants={fadeIn('down', 'spring', 0.1, 1)} className='px-12 mt-12'>
       <div className='flex items-center'>
         <div className='w-[20px] h-[10px] bg-blue-600 rounded-full'/>
         <div className='w-full border-[1px] mx-4 mt-[-2px]'/>
