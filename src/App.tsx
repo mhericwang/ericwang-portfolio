@@ -1,24 +1,28 @@
 import './App.css'
 import Header from './Components/Header'
 import SideBar from './Components/SideBar'
-import ProfilePic from './Components/ProfilePic'
 import Introduction from './Components/Introduction'
 import About from './Components/About'
+import Skills from './Components/Skills'
+import Experience from './Components/Experience'
 
 function App() {
   return (
     <>
-      <Header/>
-      <SideBar/>
-      <div className='ml-[90px] grid grid-cols-1 lg:grid-cols-3'>
-        <div className='col-span-2 p-5'>
+    <div className='relative z-0'>
+      <div className='bg-cover bg-no-repeat bg-center'>
+        <Header/>
+        <SideBar/>
+      </div>
+      <div className='ml-[90px]'>
+        <div className='p-5'>
           <Introduction/>
           <About/>
-        </div>
-        <div className='hidden lg:block'>
-          <ProfilePic/>
+          <Skills/>
+          <Experience/>
         </div>
       </div>
+    </div>
     </>
   )
 }
