@@ -12,16 +12,15 @@ const TechBubble = ({ img } : { img: string }) => (
 
 function Skills() {
   return (
-    <motion.div variants={textVariant(0.1)} className='px-12 mt-12'>
-
+    <motion.div variants={textVariant(0.1)} className='mt-12 items-center'>
       <div className='flex items-center'>
-        <div className='w-[20px] h-[10px] bg-blue-600 rounded-full'/>
+        <div className='w-[8px] h-[8px] shrink-0 bg-blue-600 rounded-full'/>
         <div className='w-full border-[1px] mx-4 mt-[-2px]'/>
         <h2 className='text-[32px] font-medium'>Skills</h2>
         <div className='w-full border-[1px] mx-4 mt-[-2px]'/>
-        <div className="w-[20px] h-[10px] bg-blue-600 rounded-full"/>
+        <div className="w-[8px] h-[8px] shrink-0 bg-blue-600 rounded-full"/>
       </div>
-      <div className='flex justify-around mt-16 mx-[-20px]'>
+      <div className='flex justify-center mt-16 ml-[-10px]'>
         {Lists.SKILLS.map((item) => (
           <div className='text-center flex flex-col justify-center items-center gap-6 mx-3'>
             <div className='bg-gray-200 rounded-full w-[100px] h-[100px]'>
@@ -32,10 +31,12 @@ function Skills() {
           </div>
         ))}
       </div>
-      <div className='mt-20 grid sm:pl-5 xl:pl-[150px] lg:pl-[30px] lg:grid-cols-6 grid-cols-3 justify-center items-center gap-12'>
-        {Lists.SKILLS_TECH.map((tech: string) => (
-          <TechBubble img={tech} />
-        ))}
+      <div className='flex justify-center ml-[-15px]'>
+        <div className='mt-20 grid lg:grid-cols-6 grid-cols-3 justify-center items-center gap-20'>
+          {Lists.SKILLS_TECH.map((tech: string) => (
+            <TechBubble img={tech} />
+          ))}
+        </div>
       </div>
     </motion.div>
   )

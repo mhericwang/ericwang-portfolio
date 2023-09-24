@@ -13,7 +13,7 @@ type project = {
 
 const ProjectCard = ({ project } : { project: project }) => (
   <motion.div variants={fadeIn('down', 'spring', project.id * 0.5, 0.75)}>
-    <div className='bg-[#151030] p-5 rounded-2xl sm:w-[360px] w-full'>
+    <div className='bg-[#1a1440] p-5 rounded-2xl w-[300px] sm:w-[360px]'>
       <div className='relative w-full h-[230px]'>
         <img 
           src={project.img}
@@ -45,11 +45,11 @@ const Projects = () => {
   return (
     <motion.div variants={fadeIn('down', 'spring', 0.1, 1)} className='px-12 mt-12'>
       <div className='flex items-center'>
-      <div className='w-[20px] h-[10px] bg-blue-600 rounded-full'/>
-      <div className='w-full border-[1px] mx-4 mt-[-2px]'/>
-      <h2 className='text-[32px] font-medium'>Projects</h2>
-      <div className='w-full border-[1px] mx-4 mt-[-2px]'/>
-      <div className="w-[20px] h-[10px] bg-blue-600 rounded-full"/>
+        <div className='w-[8px] h-[8px] shrink-0 bg-blue-600 rounded-full'/>
+        <div className='w-full border-[1px] mx-4 mt-[-2px]'/>
+        <h2 className='text-[32px] font-medium'>Projects</h2>
+        <div className='w-full border-[1px] mx-4 mt-[-2px]'/>
+        <div className="w-[8px] h-[8px] shrink-0 bg-blue-600 rounded-full"/>
       </div>
       <div className='mt-20 flex flex-wrap gap-7 justify-around'>
         {Lists.PROJECTS.map((project : project) => (

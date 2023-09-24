@@ -6,6 +6,7 @@ import About from './Components/About'
 import Skills from './Components/Skills'
 import Experience from './Components/Experience'
 import Projects from './Components/Projects'
+import Contact from './Components/Contact'
 
 function App() {
   return (
@@ -15,13 +16,14 @@ function App() {
         <Header/>
         <SideBar/>
       </div>
-      <div className='ml-[90px]'>
+      <div className='sm:ml-[90px]'>
         <div className='p-5'>
           <Introduction/>
           <About/>
           <Skills/>
           <Experience/>
           <Projects/>
+          <Contact/>
         </div>
       </div>
     </div>

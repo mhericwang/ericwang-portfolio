@@ -6,11 +6,11 @@ import ProfilePic from "./ProfilePic";
 
 function Introduction() {
   return (
-    <motion.div variants={fadeIn('down', 'spring', 0.1, 1)} className="bg-gray-200 mr-6">
-      <div className='grid grid-cols-1 lg:grid-cols-2 mr-4 align-bottom'>
+    <motion.div variants={fadeIn('down', 'spring', 0.1, 1)} className="bg-gray-200">
+      <div className='grid grid-cols-1 lg:grid-cols-2 align-bottom'>
         <motion.div 
           variants={fadeIn('down', 'spring', 0.1, 1)}
-          className='flex bg-gray-200 justify-center flex-col items-center lg:pl-24'>
+          className='flex justify-center flex-col items-center lg:pl-24'>
             <div className='h-[150px] border-r-[2px] border-gray-400'/>
             <div className='w-[10px] h-[10px] bg-blue-600 rounded-full'/>
             <h2 className='mt-5 font-medium text-[15px] tracking-widest'> HELLO! MY NAME IS</h2>

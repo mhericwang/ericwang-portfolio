@@ -10,6 +10,7 @@ import { fadeIn } from '../utils/motion';
 type experience = {
   title: string,
   company: string,
+  link: string,
   icon: string,
   date: string,
   points: Array<string>
@@ -17,7 +18,7 @@ type experience = {
 
 const ExperienceCard = ({ experience }: { experience: experience; }) => (
   <VerticalTimelineElement 
-    contentStyle={{ background: '#1d1836', color: '#fff' }}
+    contentStyle={{ background: '#1a1440', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid #232631' }}
     date={experience.date}
     iconStyle={{ background: '#d3d3d3' }}
@@ -26,6 +27,7 @@ const ExperienceCard = ({ experience }: { experience: experience; }) => (
         <img
           src={experience.icon}
           alt={experience.company}
+          onClick={window.open()}
           className='w-[80%] h-[80%] bg-white rounded-full object-contain'
         />
       </div>
@@ -54,13 +56,13 @@ const ExperienceCard = ({ experience }: { experience: experience; }) => (
 
 function Experience() {
   return (
-    <motion.div variants={fadeIn('down', 'spring', 0.1, 1)} className='px-12 mt-12'>
+    <motion.div variants={fadeIn('down', 'spring', 0.1, 1)} className=' mt-12'>
       <div className='flex items-center'>
-        <div className='w-[20px] h-[10px] bg-blue-600 rounded-full'/>
+        <div className='w-[8px] h-[8px] bg-blue-600 rounded-full shrink-0'/>
         <div className='w-full border-[1px] mx-4 mt-[-2px]'/>
         <h2 className='text-[32px] font-medium'>Experience</h2>
         <div className='w-full border-[1px] mx-4 mt-[-2px]'/>
-        <div className="w-[20px] h-[10px] bg-blue-600 rounded-full"/>
+        <div className="w-[8px] h-[8px] bg-blue-600 rounded-full shrink-0"/>
       </div>
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline lineColor='#d3d3d3'>

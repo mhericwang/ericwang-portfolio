@@ -67,6 +67,7 @@ export default {
     {
       title: 'Backend Engineer',
       company: 'Ritual',
+      link: 'https://ritual.co/',
       icon: '/src/assets/ritual.jpeg',
       date: 'Sep 2022 - Dec 2022',
       points: [
@@ -78,6 +79,7 @@ export default {
     {
       title: 'Full-stack Web Developer',
       company: 'Boosted.ai',
+      link: 'https://boosted.ai/',
       icon: '/src/assets/boosted.jpeg',
       date: 'May 2022 - Aug 2022',
       points: [
@@ -89,6 +91,7 @@ export default {
     {
       title: 'Full-stack Software Engineer',
       company: 'Enlighted',
+      link: 'https://www.enlightedinc.com/',
       icon: '/src/assets/enlighted.jpeg',
       date: 'Sep 2021 - Dec 2021',
       points: [
@@ -100,6 +103,7 @@ export default {
     {
       title: 'Software Engineer',
       company: 'PointClickCare',
+      link: 'https://pointclickcare.com/',
       icon: '/src/assets/pcc.jpeg',
       date: 'Jan 2021 - Apr 2021',
       points: [
@@ -111,6 +115,7 @@ export default {
     {
       title: 'Software Engineer',
       company: 'Alida',
+      link: 'https://www.alida.com/',
       icon: '/src/assets/alida.png',
       date: 'Jun 2020 - Aug 2020',
       points: [
@@ -122,10 +127,11 @@ export default {
     {
       title: 'Software Engineer',
       company: 'Modest Tree',
+      link: 'https://www.modesttree.com/',
       icon: '/src/assets/modest-tree.png',
       date: 'May 2019 - Aug 2019',
       points: [
-        'Lead large-scale project for GE Healthcare to create 13 VR simulations with proprietary C# based language.',
+        'Led large-scale project for GE Healthcare to create 13 VR simulations with proprietary C# based language.',
         'Refined existing simulations by removing multithreading bottlenecks to onboard new clients such as Lockheed Martin.',
         'Increased average simulation performance by 40% by analyzing inefficient method overloading and unnecessary branches.',
       ],
