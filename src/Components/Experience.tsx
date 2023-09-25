@@ -27,8 +27,8 @@ const ExperienceCard = ({ experience }: { experience: experience; }) => (
         <img
           src={experience.icon}
           alt={experience.company}
-          onClick={window.open()}
-          className='w-[80%] h-[80%] bg-white rounded-full object-contain'
+          onClick={() => window.open(experience.link, '_blank')}
+          className='w-[75%] h-[75%] bg-white rounded-full object-contain cursor-pointer hover:scale-125 transition ease-in-out'
         />
       </div>
     }>
